@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:black;
+}
+table{
+    background-color: palevioletred;
+    /* align-items: center; */
+    margin-left: 40%;
+    margin-right: 50px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+    border-radius: 2%;
+    height: 50%;
+    width: 20%;
+    border: 3px solid white;
+}
+td:hover{
+    background-color: blue;
+    border: 2px solid black;
+}
+td{
+    color:black;
+    font-weight: 1000;
+    border: 3px solid white;
+    /* border-radius: 100%; */
+}
+tr{
+    color: black;
+}
