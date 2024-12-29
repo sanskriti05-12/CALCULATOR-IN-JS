@@ -6,11 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <table border="1" align="centre" cellspacing="20px" cellpadding="10px">
+ <body>
+ 
+    <table  align="centre" cellspacing="20px" cellpadding="20px">
         <tr>
-            <td id="display" colspan="4"></td>
+            <td id="display" border="1" colspan="4"></td>
         </tr>
         <tr>
             <td onclick="pressed('1')">1</td>
@@ -30,21 +30,29 @@
             <td onclick="pressed('00')">00</td>
             <td onclick="pressed('.')">.</td>
         </tr>
-        <tr>
-            <td onclick="pressed('-')">-</td>
-            <td onclick="pressed('+')">+</td>
-            <td onclick="pressed('%')">%</td>
-            <td onclick="pressed('+')">+</td>
+        <tr >
+            <td id="operations" onclick="pressed('-')">-</td>
+            <td id="operations"onclick="pressed('+')">+</td>
+            <td id="operations"onclick="pressed('/')">/</td>
+            <td id="operations"onclick="pressed('+')">*</td>
         </tr>
         <tr>
-            <td >Del</td>
-            <td onclick="ac()" >AC</td>
-            <td onclick="pressed('/')">/</td>
-            <td onclick="equall()">=</td>
-            <td onclick="sq('square')">square</td>
+            <!-- <td >Del</td> -->
+            <!-- <td onclick="ac()" >AC</td> -->
+            <td onclick="pressed('%')">%</td>
+            <td id="equal" onclick="equall()">=</td>
+            <td onclick="ac()">AC</td>
+            <td onclick="del()">del</td>
+            </tr>
+            <tr id="last">
+
+            <td id="s" colspan="2" onclick="sq('square')">square</td>
+            
+            <td  id="s" colspan="2" onclick="cu('cube')">cube</td>
             
         </tr>
     </table>
+   
     <script src="cal.js"></script>
 </body>
 </html>

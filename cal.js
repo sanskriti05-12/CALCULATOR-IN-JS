@@ -15,3 +15,18 @@ let sq=()=>{
     store=store*store
     show.innerHTML=store
 }
+let del=()=>{
+    let show=document.querySelector("#display")
+    store=store.slice(0,-1)
+    show.innerHTML=store
+}
+let ac=()=>{
+    let show=document.querySelector("#display")
+    store=
+    show.innerHTML=""
+}
+let cu=()=>{
+    let show=document.querySelector("#display")
+    store=store*store*store
+    show.innerHTML=store
+}
